@@ -3,4 +3,7 @@
 <button (click)="userLoggedIn=true">Log In</button>
 <button (click)="userLoggedIn=false">Log Out</button>
 
-<app-child [loggedIn]="userLoggedIn"></app-child>
+<app-child #child [loggedIn]="userLoggedIn"></app-child>
+
+<p>{{ child.name }}</p>
+<button (click)="child.greetVishwas()">Greet</button>

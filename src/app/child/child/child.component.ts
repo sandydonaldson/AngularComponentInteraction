@@ -9,6 +9,7 @@ export class ChildComponent implements OnChanges {
 
   @Input() loggedIn : boolean;
   message : string;
+  name = 'Vishwas';
 
 /*
   get loggedIn(): boolean {
@@ -35,6 +36,10 @@ export class ChildComponent implements OnChanges {
     } else {
       this.message = 'Please log in';
     }
+  }
+
+  greetVishwas(){
+    alert('Hey Vishwas!');
   }
 
 }
