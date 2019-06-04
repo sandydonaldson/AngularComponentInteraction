@@ -1,2 +1,6 @@
 <h1>Parent Component</h1>
+
+<button (click)="userLoggedIn=true">Log In</button>
+<button (click)="userLoggedIn=false">Log Out</button>
+
 <app-child [loggedIn]="userLoggedIn"></app-child>
